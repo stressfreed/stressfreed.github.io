@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TalkTick - Speech to text app for mobile devices. Coming soon.">
+  <title>TalkTick - furtiv</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">furtiv</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="trumptrump.html">Trump Trump</a>
+        <a href="xshield.html">XShield</a>
+        <a href="talktick.html" class="active">TalkTick</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>TalkTick <span class="badge badge-warning">Coming Soon</span></h1>
+      <p>Your voice, instantly converted to text. TalkTick is a powerful speech-to-text app designed for seamless voice-to-text conversion on your mobile device.</p>
+    </section>
+
+    <section>
+      <h2>About TalkTick</h2>
+      <p>TalkTick is currently in development and will be launching soon. This innovative app will transform how you capture thoughts, notes, and ideas by converting your speech into accurate text in real-time.</p>
+      <p>Stay tuned for the official launch announcement!</p>
+    </section>
+
+    <section>
+      <h2>Planned Features</h2>
+      <ul class="services-list">
+        <li>Real-time speech to text conversion</li>
+        <li>High accuracy voice recognition</li>
+        <li>Multiple language support</li>
+        <li>Easy sharing and export options</li>
+      </ul>
+    </section>
+
+    <section class="text-center">
+      <h2>Get Notified</h2>
+      <p>Want to be the first to know when TalkTick launches?</p>
+      <p class="mt-2">Contact us at <span class="email-display"><span id="email"></span></span> to join our notification list.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 furtiv Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Email obfuscation to avoid spam bots
+    const user = 'info';
+    const domain = 'furtiv.com';
+    const emailElement = document.getElementById('email');
+    emailElement.textContent = `${user} [at] ${domain}`;
+    emailElement.title = `${user}@${domain}`;
+  </script>
+</body>
+</html>

@@ -1,42 +1,78 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="furtiv - Mobile app development company specializing in personalization and intelligent content filtering.">
   <title>furtiv - Mobile App Development</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>furtiv</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="trumptrump.html">Trump Trump</a>
-      <a href="xshield.html">XShield</a>
-    </nav>
+    <div class="header-container">
+      <a href="index.html" class="logo">furtiv</a>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="trumptrump.html">Trump Trump</a>
+        <a href="xshield.html">XShield</a>
+        <a href="talktick.html">TalkTick</a>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section>
-      <h2>Who We Are</h2>
-      <p>furtiv is a forward-thinking software development company specializing in mobile applications that enrich user experiences through personalization and intelligent content filtering.</p>
+    <section class="hero">
+      <h1>furtiv</h1>
+      <p>A forward-thinking software development company specializing in mobile applications that enrich user experiences through personalization and intelligent content filtering.</p>
     </section>
+
     <section>
       <h2>Our Services</h2>
-      <ul>
+      <ul class="services-list">
         <li>Mobile App Development</li>
         <li>Content Personalization Tools</li>
         <li>Smart Content Filtering Solutions</li>
       </ul>
     </section>
+
+    <section>
+      <h2>Our Apps</h2>
+      <div class="apps-grid">
+        <a href="trumptrump.html" class="app-card">
+          <h3>Trump Trump</h3>
+          <p>Content filtering app for iOS that automatically blocks Trump-related content across your web browsing experience.</p>
+        </a>
+        <a href="xshield.html" class="app-card">
+          <h3>XShield</h3>
+          <p>Advanced mobile protection features for filtering unwanted content and securing personal content consumption.</p>
+        </a>
+        <a href="talktick.html" class="app-card">
+          <h3>TalkTick <span class="badge badge-warning">Coming Soon</span></h3>
+          <p>Speech to text app for seamless voice-to-text conversion on your mobile device.</p>
+        </a>
+      </div>
+    </section>
+
     <section>
       <h2>Get in Touch</h2>
-      <p>Interested in working with us? Email us at <span id="email"></span> and let's build something amazing together.</p>
+      <div class="contact-info">
+        <p>Interested in working with us? Let's build something amazing together.</p>
+        <p class="email-display mt-2"><span id="email"></span></p>
+      </div>
     </section>
   </main>
+
   <footer>
-    &copy; 2025 furtiv. All rights reserved.
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 furtiv Ltd. All rights reserved.</p>
+    </div>
   </footer>
+
   <script>
     // Email obfuscation to avoid spam bots
     const user = 'info';

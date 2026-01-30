@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support - furtiv Ltd">
+  <title>Support - furtiv</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">furtiv</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="trumptrump.html">Trump Trump</a>
+        <a href="xshield.html">XShield</a>
+        <a href="talktick.html">TalkTick</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Support</h1>
+      <p>We're here to help. If you have questions about our apps or need assistance, please don't hesitate to reach out.</p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p>Please email us at <span class="email-display"><span id="email"></span></span> if you need further support.</p>
+        <p class="mt-2 text-muted">We aim to respond to all inquiries within 48 hours.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Frequently Asked Questions</h2>
+      <p class="text-muted">FAQ content coming soon. In the meantime, please contact us directly with any questions.</p>
+    </section>
+
+    <section>
+      <h2>App-Specific Support</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <h3>Trump Trump</h3>
+          <p>Having issues with content filtering in Safari? Make sure the extension is enabled in Settings > Safari > Extensions.</p>
+        </div>
+        <div class="app-card">
+          <h3>XShield</h3>
+          <p>XShield is currently in development. Support documentation will be available upon release.</p>
+        </div>
+        <div class="app-card">
+          <h3>TalkTick</h3>
+          <p>TalkTick is coming soon. Support documentation will be available upon release.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 furtiv Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Email obfuscation to avoid spam bots
+    const user = 'info';
+    const domain = 'furtiv.com';
+    const emailElement = document.getElementById('email');
+    emailElement.textContent = `${user} [at] ${domain}`;
+    emailElement.title = `${user}@${domain}`;
+  </script>
+</body>
+</html>

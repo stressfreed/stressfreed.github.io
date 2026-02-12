@@ -441,3 +441,385 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ==========================================
+   Landing Page Styles
+   ========================================== */
+
+/* Full-width layout for landing pages */
+.landing-page main {
+  max-width: 100%;
+  padding: 0;
+}
+
+.landing-page section {
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Landing Hero */
+.landing-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.landing-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.landing-hero h1 {
+  color: var(--white);
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.landing-hero .tagline {
+  font-size: 1.5rem;
+  opacity: 0.95;
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.landing-hero .description {
+  font-size: 1.15rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: var(--radius);
+}
+
+.btn-appstore {
+  background-color: #000;
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-appstore:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: var(--white);
+}
+
+.btn-appstore svg {
+  width: 28px;
+  height: 28px;
+}
+
+.btn-appstore-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.btn-appstore-text .small {
+  font-size: 0.7rem;
+  opacity: 0.9;
+}
+
+.btn-appstore-text .large {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Image Gallery */
+.image-gallery {
+  padding: 4rem 2rem;
+  background: var(--bg-color);
+}
+
+.image-gallery-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Feature Sections */
+.features-section {
+  padding: 4rem 2rem;
+  background: var(--white);
+}
+
+.features-section.alt-bg {
+  background: var(--bg-color);
+}
+
+.features-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.features-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.features-section.alt-bg .feature-card {
+  background: var(--white);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.75rem;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Use Cases Grid */
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.use-case {
+  padding: 1.5rem;
+  background: var(--bg-color);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.use-case h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.use-case p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Privacy Highlight */
+.privacy-highlight {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: var(--white);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.privacy-highlight-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.privacy-highlight h2 {
+  color: var(--white);
+  border-bottom: none;
+  margin-bottom: 1rem;
+}
+
+.privacy-highlight p {
+  opacity: 0.95;
+  font-size: 1.1rem;
+}
+
+.privacy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Bottom CTA */
+.bottom-cta {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.bottom-cta h2 {
+  color: var(--white);
+  border-bottom: none;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bottom-cta p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+/* App Info */
+.app-info {
+  padding: 3rem 2rem;
+  background: var(--white);
+}
+
+.app-info-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.app-info-item {
+  padding: 1rem;
+}
+
+.app-info-item .label {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.app-info-item .value {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Landing Page Responsive */
+@media (max-width: 992px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 3rem 1.5rem;
+  }
+
+  .landing-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-hero .tagline {
+    font-size: 1.25rem;
+  }
+
+  .features-section,
+  .image-gallery {
+    padding: 3rem 1.5rem;
+  }
+
+  .features-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-hero h1 {
+    font-size: 2rem;
+  }
+
+  .landing-hero .tagline {
+    font-size: 1.1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-appstore {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+}
